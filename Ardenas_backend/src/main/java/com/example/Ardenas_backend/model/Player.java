@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -34,6 +36,9 @@ public class Player {
     @NotNull
     @Column(name="phone_num")
     private String phone_num;
+    @OneToMany(mappedBy = "id_player")
+    private Set<Role> roles = new HashSet<>();
+
 
     public Player () {}
 
