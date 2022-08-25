@@ -2,14 +2,14 @@ package com.example.Ardenas_backend.model;
 
 
 import javax.persistence.*;
-import com.sun.istack.internal.*;
+import com.sun.istack.NotNull;
 import lombok.*;
 
 
 
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @Getter
 @Setter
 public class User {
@@ -31,7 +31,8 @@ public class User {
     @Column
     private String nickname;
     @NotNull
-    @OneToOne
-    private Long contact_info;
+    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
+    private Contact_info contact_info;
 
 }
