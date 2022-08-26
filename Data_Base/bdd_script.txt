@@ -1,1 +1,3 @@
-CREATE TABLE PLAYER (id number PRIMARY KEY, name varchar(20), lastname varchar(20), nickname varchar(20), password varchar(20),  phone_num varchar(20), email varchar(20));
+CREATE TABLE PLAYER (id number PRIMARY KEY auto_increment, name varchar(20), lastname varchar(20), nickname varchar(20), password varchar(20), 
+phone_num varchar(20), email varchar(20));
+CREATE TABLE ROLE (id number PRIMARY KEY  auto_increment , role_type number, FOREIGN KEY (id) REFERENCES PLAYER);

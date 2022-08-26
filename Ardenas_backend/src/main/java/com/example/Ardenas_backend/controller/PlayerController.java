@@ -36,6 +36,7 @@ public class PlayerController {
     @PostMapping("/new")
     public ResponseEntity<Player> savePlayer(@RequestBody Player pl) throws ResourceNotFoundException {
         Player savedPlayer = playerService.savePlayer(pl);
+
         if (playerService.getPlayerById(pl.getId()).isPresent()){
            return ResponseEntity.status(HttpStatus.CREATED).body(playerService.getPlayerById(pl.getId()).get());
         }

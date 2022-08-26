@@ -36,8 +36,6 @@ public class Player {
     @NotNull
     @Column(name="phone_num")
     private String phone_num;
-    @OneToMany(mappedBy = "id_player")
-    private Set<Role> roles = new HashSet<>();
 
 
     public Player () {}
