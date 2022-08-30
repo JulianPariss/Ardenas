@@ -1,5 +1,4 @@
 import React, {useContext, useEffect} from "react";
-import styled from "styled-components";
 import {userContext} from "../userContext";
 import Icon from "../molecules/icons/Icon";
 import logo from "../../resources/icons/logo.png"
@@ -12,7 +11,8 @@ const Header = () => {
     return(
         
             <header>
-                <div className="imageDiv">
+                <div className="leftBlock">
+                    <h1 className="slogan">Airsoft club La Plata</h1>
                     <Icon icon={logo} alter={"Logo"}/>
                 </div>  
                 {isLogged && <p>Hay contexto!</p>}
