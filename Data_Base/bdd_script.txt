@@ -2,3 +2,10 @@ CREATE TABLE PLAYER (id number PRIMARY KEY auto_increment, name varchar(20), las
 phone_num varchar(20), email varchar(20));
 
 CREATE TABLE GAME_ROLE (id number PRIMARY KEY  auto_increment , role_name varchar(20));
+
+CREATE TABLE PLAYER_GAME_ROLE (id number PRIMARY KEY auto_increment,player_id number NOT NULL, game_role_id number NOT NULL);
+
+
+DROP TABLE GAME_ROLE;
+DROP TABLE PLAYER;
+DROP TABLE PLAYER_GAME_ROLE;

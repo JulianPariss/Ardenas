@@ -27,4 +27,6 @@ public class GameRole {
     public GameRole(String role_name) {
         this.role_name = role_name;
     }
+
+
 }
