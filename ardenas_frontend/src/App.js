@@ -4,6 +4,7 @@ import Home from './components/template/Home';
 import { Routes, Route } from "react-router-dom"
 import Mapa from './components/template/Mapa';
 import NavBarDesktop from './components/organism/NavBarDesktop';
+import HowToGet from './components/template/HowToGet';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/map' element={<Mapa/>}/>
-          <Route path='/how-to-get' element={<Mapa/>}/>
+          <Route path='/how-to-get' element={<HowToGet/>}/>
           <Route path='/games' element={<Mapa/>}/>
           <Route path='/contact' element={<Mapa/>}/>
         </Routes>
