@@ -1,0 +1,28 @@
+@use '../styleVariables/variables';
+
+.NavBarDesktop{
+    background-color: variables.$light_gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-width: 0.5px 0px;
+    border-style: solid;
+    border-color: variables.$light_green;
+    outline-width: 5px 0px;
+    outline-style: solid;
+    outline-color: variables.$dark_gray;
+
+    .NavLink{
+        cursor: pointer;
+        .P{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .current {
+        cursor:default;
+        .P{
+            color: variables.$focus_color;
+        }
+    }
+}

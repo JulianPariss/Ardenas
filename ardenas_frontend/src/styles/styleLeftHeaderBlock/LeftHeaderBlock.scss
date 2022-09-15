@@ -1,0 +1,18 @@
+@use '../styleVariables/variables';
+
+.LeftHeaderBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .H1{
+        color: white;
+        font-size: 20px;
+        margin: 0 10px;
+        font-weight: 400;
+    }
+    .Icon{
+        width: 60px;
+        height: 60px;
+        margin: 0 0 0 10px;
+    }
+}
