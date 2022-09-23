@@ -1,0 +1,13 @@
+.SectionSeparator {
+  width: 90%;
+}
+.SectionSeparator .H2 {
+  font-size: 22px;
+  color: white;
+  text-align: left;
+  margin: 8px 0px;
+}
+.SectionSeparator .HrLine {
+  color: #88A346;
+  margin: 8px 0px;
+}/*# sourceMappingURL=SectionSeparator.css.map */

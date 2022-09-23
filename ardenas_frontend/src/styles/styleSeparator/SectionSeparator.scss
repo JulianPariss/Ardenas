@@ -1,0 +1,15 @@
+@use "../styleVariables/variables";
+
+.SectionSeparator{
+    width: 90%;
+    .H2{
+        font-size: 22px;
+        color: white;
+        text-align: left;
+        margin: 8px 0px;
+    }
+    .HrLine{
+        color: variables.$light_green;
+        margin: 8px 0px
+    }
+}

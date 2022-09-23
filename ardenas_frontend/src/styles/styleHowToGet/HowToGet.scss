@@ -1,4 +1,4 @@
-@use "../styleVariables//variables";
+@use "../styleVariables/variables";
 
 .HowToGet{  
     width: 100%;
@@ -9,6 +9,21 @@
         margin: 20px 0px 10px;
         color: white;
         font-size: 26px;
+    }
+    .ReferenceHowToGet{
+        width: 90%;
+        max-height: 300px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .P{
+            color: white;
+            text-align: left;
+            margin: 5px 0px;
+        }
     }
     .MapSection{
         margin: 10px 0px;
