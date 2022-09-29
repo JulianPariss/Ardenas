@@ -6,9 +6,10 @@
   border-width: 0.5px 0px;
   border-style: solid;
   border-color: #88A346;
-  outline-width: 5px 0px;
+  outline-width: 2.5px;
   outline-style: solid;
   outline-color: #1F1F1F;
+  box-sizing: border-box;
 }
 .NavBarDesktop .NavLink {
   cursor: pointer;

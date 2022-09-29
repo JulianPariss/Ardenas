@@ -8,9 +8,10 @@
     border-width: 0.5px 0px;
     border-style: solid;
     border-color: variables.$light_green;
-    outline-width: 5px 0px;
+    outline-width: 2.5px;
     outline-style: solid;
     outline-color: variables.$dark_gray;
+    box-sizing: border-box;
 
     .NavLink{
         cursor: pointer;

@@ -1,0 +1,91 @@
+@use '../styleVariables/variables';
+
+.Login, .Register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    .H2{
+        color: white;
+        margin: 15px 0px;
+        font-size: 26px;
+    }
+    .P{
+        margin: 8px 0px;
+        color: white;
+        font-size: 14px;
+        .Button{
+            background:none;
+            color: variables.$focus_color;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+    .LoginForm, .RegisterForm{
+        min-height: 40vh;
+        background-color: variables.$medium_gray;
+        min-width: 400px;
+        border-radius: 16px;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            width: 90%;
+            margin: 15px 0px;
+            .SubmitButton{
+                margin: 15px 0px;
+                background-color: variables.$focus_color;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                height: 40px;
+                color: white;
+                font-size: 22px;
+                border-radius: 8px;
+                box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 2px rgba(255, 255, 255, 0.25);
+            }
+            .FormField{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin: 10px 0px;  
+            }
+            .P{
+                margin: 5px 0px;
+                color: white;
+                font-weight: lighter;
+            }
+            .P-div{
+                height: 25px;
+            }
+            .error{
+                color: variables.$error;
+                font-weight:400;
+                font-size: 14px;
+                margin: 4px;
+            }
+            .InputForm{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 8px;
+            }
+            .HalfConteiner{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .HalfFields{
+                    width: 49%;
+                }
+            }
+        
+            
+        }
+    }
+}

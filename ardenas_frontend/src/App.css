@@ -8,16 +8,28 @@
   text-align: center;
 }
 .App .Body {
-  min-height: calc(100vh + 400px);
-  background: linear-gradient(270deg, rgba(31, 31, 31, 0.1411764706) 0%, rgba(31, 31, 31, 0.2) 0.01%, rgba(255, 255, 255, 0.0666666667) 51.04%, rgba(0, 0, 0, 0) 100%, rgba(31, 31, 31, 0) 100%, rgba(31, 31, 31, 0) 100%), rgba(31, 31, 31, 0.8235294118);
+  min-height: 60vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 50px;
 }
-.App .Body .Background {
+.App .Body .Background1Layer {
+  height: 100%;
+  min-width: 100%;
   background: url("./resources/images/camo_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
   filter: opacity(50%) grayscale(100%);
-  min-height: calc(100vh + 400px);
-  width: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: cover;
   z-index: -999;
+  top: 0;
+}
+.App .Body .Background2Layer {
+  height: 100%;
+  min-width: 100%;
+  background: linear-gradient(270deg, rgba(31, 31, 31, 0.1411764706) 0%, rgba(31, 31, 31, 0.2) 0.01%, rgba(255, 255, 255, 0.0666666667) 51.04%, rgba(0, 0, 0, 0) 100%, rgba(31, 31, 31, 0) 100%, rgba(31, 31, 31, 0) 100%), rgba(31, 31, 31, 0.8235294118);
+  position: fixed;
+  top: 0;
+  z-index: -998;
 }/*# sourceMappingURL=App.css.map */
