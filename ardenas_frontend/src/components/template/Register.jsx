@@ -2,7 +2,7 @@ import React from "react";
 import H2 from "../atoms/H2";
 import RedirectLink from "../molecules/RedirectLink";
 import RegisterForm from "../organism/RegisterForm";
-import "../../styles/styleLogin/Login.css"
+import "../../styles/styleLogin/LoginRegister.css"
 
 const Register = () => {
     return(

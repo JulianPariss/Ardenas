@@ -9,8 +9,21 @@
   margin: 0 10px;
   font-weight: 400;
 }
-.LeftHeaderBlock .Icon {
+.LeftHeaderBlock .Button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 10px;
+  background: none;
+  flex-direction: row;
+  border: none;
+}
+.LeftHeaderBlock .Button .Icon {
   width: 60px;
   height: 60px;
-  margin: 0 0 0 10px;
 }/*# sourceMappingURL=LeftHeaderBlock.css.map */

@@ -1,11 +1,12 @@
 import React from "react";
 import SectionCards from "../organism/SectionCards";
+import homeCards from "../../resources/data/homeCards.json"
 
 const Home = () => {
     return(
-        <>
-            <SectionCards/>
-        </>
+        <div className="Home">
+            <SectionCards data={homeCards}/>
+        </div>
     )
 }
 

@@ -2,8 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";  
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup";
-import InputForm from "../atoms/InputForm";
-import P from "../atoms/P";
+import "yup-phone";
 import FormField from "../molecules/FormField";
 
 const onSubmit = data => console.log(data);
@@ -12,10 +11,10 @@ const schema = yup.object({
     username: yup.string().required("Campo requerido"),
     name: yup.string().required("Campo requerido"),
     lastname: yup.string().required("Campo requerido"),
-    email: yup.string().required("Campo requerido"),
-    phone_number: yup.string().required("Campo requerido"),
-    password: yup.string().required("Campo requerido"),
-    confirm_password: yup.string().required("Campo requerido"),
+    email: yup.string().required("Campo requerido").email("El formato es incorrecto"),
+    phone_number: yup.string().required("Campo requerido").phone("AR",undefined,"Ingrese un numero valido"),
+    password: yup.string().required("Campo requerido").min(6, "La contraseña debe contener al menos 6 digitos"),
+    confirm_password: yup.string().oneOf([yup.ref("password"), null], "Las contraseñas deben coincidir"),
   }).required();
 
 const RegisterForm = () => {

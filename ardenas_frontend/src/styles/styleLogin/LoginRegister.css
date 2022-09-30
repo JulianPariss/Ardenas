@@ -65,7 +65,7 @@
   height: 25px;
 }
 .Login .LoginForm form .error, .Login .RegisterForm form .error, .Register .LoginForm form .error, .Register .RegisterForm form .error {
-  color: #be0000;
+  color: #d60000;
   font-weight: 400;
   font-size: 14px;
   margin: 4px;
@@ -84,4 +84,4 @@
 }
 .Login .LoginForm form .HalfConteiner .HalfFields, .Login .RegisterForm form .HalfConteiner .HalfFields, .Register .LoginForm form .HalfConteiner .HalfFields, .Register .RegisterForm form .HalfConteiner .HalfFields {
   width: 49%;
-}/*# sourceMappingURL=Login.css.map */
+}/*# sourceMappingURL=LoginRegister.css.map */

@@ -1,10 +1,10 @@
 import React from "react";
-import cardsJson from "../../resources/data/sectionCards.json"
 import SectionCard from "../molecules/SectionCard";
 
-const SectionCards = () => {
+const SectionCards = (props) => {
+    const { data } = props;
     return(
-        cardsJson.map((elem)=>{
+        data.map((elem)=>{
             return( <SectionCard title={elem.title} content={elem.content} key={elem.id}/> )
         })
     )

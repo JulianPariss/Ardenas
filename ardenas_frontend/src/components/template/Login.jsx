@@ -1,6 +1,6 @@
 import React from "react";
 import LoginForm from "../organism/LoginForm";
-import "../../styles/styleLogin/Login.css"
+import "../../styles/styleLogin/LoginRegister.css"
 import H2 from "../atoms/H2";
 import RedirectLink from "../molecules/RedirectLink";
 
