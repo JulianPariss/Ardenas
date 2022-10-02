@@ -9,5 +9,4 @@ public class ArdenasBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ArdenasBackendApplication.class, args);
 	}
-
 }
