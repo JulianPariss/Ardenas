@@ -11,6 +11,8 @@ import java.util.List;
 
 @Getter
 @Setter
+
+@Entity
 @Table(name = "Match")
 public class Match {
     @Id
@@ -27,6 +29,7 @@ public class Match {
         this.players.add(pl);
     }
 
+    public Match(){}
     public Match(Date fecha) {
         this.fecha = fecha;
     }

@@ -12,6 +12,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.swing.text.html.Option;
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -22,6 +24,18 @@ public class MatchController {
 
     @Autowired
     PlayerService playerService;
+
+    @GetMapping("/all")
+    public List<Match> allMatches () { return matchService.findAll(); }
+
+    @GetMapping("/{id}")
+    public Match getMatchById  (@PathVariable Long id) throws ResourceNotFoundException{
+        Optional<Match> serchedMatch = matchService.getMatchById(id);
+        if (serchedMatch.isPresent()){
+            return serchedMatch.get();
+        }
+        throw new ResourceNotFoundException("Match with id:"+id+" dosen´t exist");
+    }
 
     @PostMapping("/new")
     public ResponseEntity<Match> saveMatch (@RequestBody Match mt) {

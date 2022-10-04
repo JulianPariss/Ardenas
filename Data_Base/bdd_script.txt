@@ -5,6 +5,9 @@ CREATE TABLE GAME_ROLE (id number PRIMARY KEY  auto_increment , role_name varcha
 
 CREATE TABLE PLAYER_GAME_ROLE (id number PRIMARY KEY auto_increment,player_id number NOT NULL, game_role_id number NOT NULL);
 
+CREATE TABLE MATCH_PLAYERS (id number PRIMARY KEY auto_increment,match_id number NOT NULL, players_id number NOT NULL);
+
+CREATE TABLE MATCH(id number PRIMARY KEY auto_increment, fecha DATE);
 
 DROP TABLE GAME_ROLE;
 DROP TABLE PLAYER;
